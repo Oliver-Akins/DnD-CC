@@ -4,11 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.css">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
     <title>D&D Currency Converter</title>
 </head>
 <body>
     <h1>D&D Currency Converter</h1>
+    <div class="centered">
+        <select id="from-in">
+            <option value="error">Choose Currency</option>
+            <option value="0">Bronze</option>
+            <option value="1">Silver</option>
+            <option value="2">Gold</option>
+            <option value="3">Platinum</option>
+        </select>
+        <img src="./assets/icons/right-arrow.svg" alt="--------->" width="62px" height="45px">
+        <select id="to-in">
+            <option value="error">Choose Currency</option>
+            <option value="0">Bronze</option>
+            <option value="1">Silver</option>
+            <option value="2">Gold</option>
+            <option value="3">Platinum</option>
+        </select>
+        <br>
+        <input type="text" id="amount" placeholder="Amount of Money">
+    </div>
+    <br>
+    <br>
+    <div class="centered">
+        <button onclick="convert()">Convert</button>
+        <br>
+        <div>
+            <h3 id="response-area"></h3>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="centered">
+        Arrow icon made by
+        <a href="https://www.flaticon.com/authors/lyolya" title="Lyolya">Lyolya</a>
+        from <a href="https://www.flaticon.com/" title="Flaticon">flaticon</a>
+        is licensed by
+        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">
+        CC 3.0 BY</a>
+    </div>
+    <div>
+        Source is auditable <a href="">here</a>.
+    </div>
 </body>
 </html>
