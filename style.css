@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+}
+
+
+div, select {
+    display: inline-block !important;
+}
+
+
+input {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div.centered {
+    display: inline-block !important;
+    text-align: center;
+    width: 100%;
+}
+
+
+img {
+    vertical-align: middle;
+}
